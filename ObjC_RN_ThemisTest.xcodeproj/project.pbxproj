@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D371318275B9C930090279A /* SymmetricKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D371317275B9C930090279A /* SymmetricKey.m */; };
 		1D90DD3527579E5000C743CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D90DD3427579E5000C743CD /* AppDelegate.m */; };
 		1D90DD3827579E5000C743CD /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D90DD3727579E5000C743CD /* SceneDelegate.m */; };
 		1D90DD3B27579E5000C743CD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D90DD3A27579E5000C743CD /* ViewController.m */; };
@@ -17,6 +18,9 @@
 		1D90DD5027579E5700C743CD /* ObjC_RN_ThemisTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D90DD4F27579E5700C743CD /* ObjC_RN_ThemisTestTests.m */; };
 		1D90DD5A27579E5700C743CD /* ObjC_RN_ThemisTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D90DD5927579E5700C743CD /* ObjC_RN_ThemisTestUITests.m */; };
 		1D90DD5C27579E5700C743CD /* ObjC_RN_ThemisTestUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D90DD5B27579E5700C743CD /* ObjC_RN_ThemisTestUITestsLaunchTests.m */; };
+		22C01EEEC5378D6B737C0984 /* Pods_ObjC_RN_ThemisTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E1AD5D5D1343B82F76149C3 /* Pods_ObjC_RN_ThemisTest.framework */; };
+		260836E0B063FB0F005F1E0E /* Pods_ObjC_RN_ThemisTest_ObjC_RN_ThemisTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407D80222C5E274B4F21C4B1 /* Pods_ObjC_RN_ThemisTest_ObjC_RN_ThemisTestUITests.framework */; };
+		41CE3030B033C561136B5D39 /* Pods_ObjC_RN_ThemisTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99D29D47B24F4D5D330800D1 /* Pods_ObjC_RN_ThemisTestTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		071C8DE80F8BC0981C8A9D13 /* Pods-ObjC_RN_ThemisTest-ObjC_RN_ThemisTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjC_RN_ThemisTest-ObjC_RN_ThemisTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-ObjC_RN_ThemisTest-ObjC_RN_ThemisTestUITests/Pods-ObjC_RN_ThemisTest-ObjC_RN_ThemisTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1D371317275B9C930090279A /* SymmetricKey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SymmetricKey.m; sourceTree = "<group>"; };
+		1D371319275E81C90090279A /* SymmetricKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SymmetricKey.h; sourceTree = "<group>"; };
 		1D90DD3027579E5000C743CD /* ObjC_RN_ThemisTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjC_RN_ThemisTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D90DD3327579E5000C743CD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D90DD3427579E5000C743CD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +61,14 @@
 		1D90DD5527579E5700C743CD /* ObjC_RN_ThemisTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjC_RN_ThemisTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D90DD5927579E5700C743CD /* ObjC_RN_ThemisTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjC_RN_ThemisTestUITests.m; sourceTree = "<group>"; };
 		1D90DD5B27579E5700C743CD /* ObjC_RN_ThemisTestUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjC_RN_ThemisTestUITestsLaunchTests.m; sourceTree = "<group>"; };
+		407D80222C5E274B4F21C4B1 /* Pods_ObjC_RN_ThemisTest_ObjC_RN_ThemisTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjC_RN_ThemisTest_ObjC_RN_ThemisTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B8490826090DA8F8B264440 /* Pods-ObjC_RN_ThemisTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjC_RN_ThemisTestTests.release.xcconfig"; path = "Target Support Files/Pods-ObjC_RN_ThemisTestTests/Pods-ObjC_RN_ThemisTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		4E1AD5D5D1343B82F76149C3 /* Pods_ObjC_RN_ThemisTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjC_RN_ThemisTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F7D00DB0C27DD75B4C6E73B /* Pods-ObjC_RN_ThemisTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjC_RN_ThemisTestTests.debug.xcconfig"; path = "Target Support Files/Pods-ObjC_RN_ThemisTestTests/Pods-ObjC_RN_ThemisTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		905BCFFB8C7781DDEE84DE9D /* Pods-ObjC_RN_ThemisTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjC_RN_ThemisTest.release.xcconfig"; path = "Target Support Files/Pods-ObjC_RN_ThemisTest/Pods-ObjC_RN_ThemisTest.release.xcconfig"; sourceTree = "<group>"; };
+		99D29D47B24F4D5D330800D1 /* Pods_ObjC_RN_ThemisTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjC_RN_ThemisTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4A5F76292175498C01878D0 /* Pods-ObjC_RN_ThemisTest-ObjC_RN_ThemisTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjC_RN_ThemisTest-ObjC_RN_ThemisTestUITests.release.xcconfig"; path = "Target Support Files/Pods-ObjC_RN_ThemisTest-ObjC_RN_ThemisTestUITests/Pods-ObjC_RN_ThemisTest-ObjC_RN_ThemisTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F90BD2719D798C15DB1B989B /* Pods-ObjC_RN_ThemisTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjC_RN_ThemisTest.debug.xcconfig"; path = "Target Support Files/Pods-ObjC_RN_ThemisTest/Pods-ObjC_RN_ThemisTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22C01EEEC5378D6B737C0984 /* Pods_ObjC_RN_ThemisTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41CE3030B033C561136B5D39 /* Pods_ObjC_RN_ThemisTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,12 +92,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				260836E0B063FB0F005F1E0E /* Pods_ObjC_RN_ThemisTest_ObjC_RN_ThemisTestUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D371316275B9C5E0090279A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1D371317275B9C930090279A /* SymmetricKey.m */,
+				1D371319275E81C90090279A /* SymmetricKey.h */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 		1D90DD2727579E5000C743CD = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +115,8 @@
 				1D90DD4E27579E5700C743CD /* ObjC_RN_ThemisTestTests */,
 				1D90DD5827579E5700C743CD /* ObjC_RN_ThemisTestUITests */,
 				1D90DD3127579E5000C743CD /* Products */,
+				56EC13BC7DE25E2DFE640885 /* Pods */,
+				BB8777DEA911CDDB8671324F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +133,7 @@
 		1D90DD3227579E5000C743CD /* ObjC_RN_ThemisTest */ = {
 			isa = PBXGroup;
 			children = (
+				1D371316275B9C5E0090279A /* View Controllers */,
 				1D90DD3327579E5000C743CD /* AppDelegate.h */,
 				1D90DD3427579E5000C743CD /* AppDelegate.m */,
 				1D90DD3627579E5000C743CD /* SceneDelegate.h */,
@@ -136,6 +166,30 @@
 			path = ObjC_RN_ThemisTestUITests;
 			sourceTree = "<group>";
 		};
+		56EC13BC7DE25E2DFE640885 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F90BD2719D798C15DB1B989B /* Pods-ObjC_RN_ThemisTest.debug.xcconfig */,
+				905BCFFB8C7781DDEE84DE9D /* Pods-ObjC_RN_ThemisTest.release.xcconfig */,
+				071C8DE80F8BC0981C8A9D13 /* Pods-ObjC_RN_ThemisTest-ObjC_RN_ThemisTestUITests.debug.xcconfig */,
+				D4A5F76292175498C01878D0 /* Pods-ObjC_RN_ThemisTest-ObjC_RN_ThemisTestUITests.release.xcconfig */,
+				5F7D00DB0C27DD75B4C6E73B /* Pods-ObjC_RN_ThemisTestTests.debug.xcconfig */,
+				4B8490826090DA8F8B264440 /* Pods-ObjC_RN_ThemisTestTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BB8777DEA911CDDB8671324F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E1AD5D5D1343B82F76149C3 /* Pods_ObjC_RN_ThemisTest.framework */,
+				407D80222C5E274B4F21C4B1 /* Pods_ObjC_RN_ThemisTest_ObjC_RN_ThemisTestUITests.framework */,
+				99D29D47B24F4D5D330800D1 /* Pods_ObjC_RN_ThemisTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +197,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D90DD5F27579E5700C743CD /* Build configuration list for PBXNativeTarget "ObjC_RN_ThemisTest" */;
 			buildPhases = (
+				1C8F4D20BE936D46886ABCB6 /* [CP] Check Pods Manifest.lock */,
 				1D90DD2C27579E5000C743CD /* Sources */,
 				1D90DD2D27579E5000C743CD /* Frameworks */,
 				1D90DD2E27579E5000C743CD /* Resources */,
+				FCD1C1087A325623F843D6B3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +216,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D90DD6227579E5700C743CD /* Build configuration list for PBXNativeTarget "ObjC_RN_ThemisTestTests" */;
 			buildPhases = (
+				E3F833EA956184C6BB43137A /* [CP] Check Pods Manifest.lock */,
 				1D90DD4727579E5700C743CD /* Sources */,
 				1D90DD4827579E5700C743CD /* Frameworks */,
 				1D90DD4927579E5700C743CD /* Resources */,
@@ -178,9 +235,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D90DD6527579E5700C743CD /* Build configuration list for PBXNativeTarget "ObjC_RN_ThemisTestUITests" */;
 			buildPhases = (
+				7BF07CE94132EABB9C85DD5B /* [CP] Check Pods Manifest.lock */,
 				1D90DD5127579E5700C743CD /* Sources */,
 				1D90DD5227579E5700C743CD /* Frameworks */,
 				1D90DD5327579E5700C743CD /* Resources */,
+				01F1633689FF1DCF75066F64 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,6 +320,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		01F1633689FF1DCF75066F64 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ObjC_RN_ThemisTest-ObjC_RN_ThemisTestUITests/Pods-ObjC_RN_ThemisTest-ObjC_RN_ThemisTestUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ObjC_RN_ThemisTest-ObjC_RN_ThemisTestUITests/Pods-ObjC_RN_ThemisTest-ObjC_RN_ThemisTestUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ObjC_RN_ThemisTest-ObjC_RN_ThemisTestUITests/Pods-ObjC_RN_ThemisTest-ObjC_RN_ThemisTestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C8F4D20BE936D46886ABCB6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ObjC_RN_ThemisTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BF07CE94132EABB9C85DD5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ObjC_RN_ThemisTest-ObjC_RN_ThemisTestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3F833EA956184C6BB43137A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ObjC_RN_ThemisTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCD1C1087A325623F843D6B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ObjC_RN_ThemisTest/Pods-ObjC_RN_ThemisTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ObjC_RN_ThemisTest/Pods-ObjC_RN_ThemisTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ObjC_RN_ThemisTest/Pods-ObjC_RN_ThemisTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1D90DD2C27579E5000C743CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -270,6 +432,7 @@
 				1D90DD3527579E5000C743CD /* AppDelegate.m in Sources */,
 				1D90DD4627579E5600C743CD /* main.m in Sources */,
 				1D90DD3827579E5000C743CD /* SceneDelegate.m in Sources */,
+				1D371318275B9C930090279A /* SymmetricKey.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +602,7 @@
 		};
 		1D90DD6027579E5700C743CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F90BD2719D798C15DB1B989B /* Pods-ObjC_RN_ThemisTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -466,6 +630,7 @@
 		};
 		1D90DD6127579E5700C743CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 905BCFFB8C7781DDEE84DE9D /* Pods-ObjC_RN_ThemisTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -493,6 +658,7 @@
 		};
 		1D90DD6327579E5700C743CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F7D00DB0C27DD75B4C6E73B /* Pods-ObjC_RN_ThemisTestTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -516,6 +682,7 @@
 		};
 		1D90DD6427579E5700C743CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B8490826090DA8F8B264440 /* Pods-ObjC_RN_ThemisTestTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -539,6 +706,7 @@
 		};
 		1D90DD6627579E5700C743CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 071C8DE80F8BC0981C8A9D13 /* Pods-ObjC_RN_ThemisTest-ObjC_RN_ThemisTestUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -560,6 +728,7 @@
 		};
 		1D90DD6727579E5700C743CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4A5F76292175498C01878D0 /* Pods-ObjC_RN_ThemisTest-ObjC_RN_ThemisTestUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
