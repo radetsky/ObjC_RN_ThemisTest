@@ -269,7 +269,7 @@
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -297,30 +297,344 @@
         <!--Key pair-->
         <scene sceneID="x6v-2g-hL5">
             <objects>
-                <viewController title="Key pair" id="X5f-Zx-lm3" sceneMemberID="viewController">
+                <viewController title="Key pair" id="X5f-Zx-lm3" customClass="KeyPairViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3SY-Kv-YMA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tre-1L-Gxa">
+                                <rect key="frame" x="20" y="128.5" width="374" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="p3j-fW-Qyy"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Private key" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkW-wL-HjJ">
+                                <rect key="frame" x="20" y="98" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="76" translatesAutoresizingMaskIntoConstraints="NO" id="Jx5-9A-UNQ">
+                                <rect key="frame" x="152" y="298" width="110" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Azw-40-WMa">
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="ICH-9B-jeY"/>
+                                            <constraint firstAttribute="width" constant="110" id="zXt-nw-MQv"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Copy"/>
+                                        <connections>
+                                            <action selector="copyPrivateKey:" destination="X5f-Zx-lm3" eventType="touchUpInside" id="RbW-tJ-lk9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Public key" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bf-Vr-02i">
+                                <rect key="frame" x="20" y="398" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="76" translatesAutoresizingMaskIntoConstraints="NO" id="cEl-wT-IjL">
+                                <rect key="frame" x="152" y="606.5" width="110" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UpZ-kc-FA6">
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="110" id="ZD6-22-296"/>
+                                            <constraint firstAttribute="height" constant="50" id="aLX-M4-rCa"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Copy"/>
+                                        <connections>
+                                            <action selector="copyPublicKey:" destination="X5f-Zx-lm3" eventType="touchUpInside" id="dPi-Rm-lOO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JfK-IZ-3ZY">
+                                <rect key="frame" x="20" y="428.5" width="374" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="02A-v5-oaT"/>
+                                </constraints>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLM-te-hMW">
+                                <rect key="frame" x="152" y="779" width="110" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9hx-GG-scc"/>
+                                    <constraint firstAttribute="width" constant="110" id="Pod-74-hOE"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Generate" subtitle="new key pair" titleAlignment="center"/>
+                                <connections>
+                                    <action selector="generateTouchUp:" destination="X5f-Zx-lm3" eventType="touchUpInside" id="xGM-4V-Ovp"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Ao2-b8-xoM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ao2-b8-xoM" firstAttribute="trailing" secondItem="JfK-IZ-3ZY" secondAttribute="trailing" constant="20" id="462-Ek-O2L"/>
+                            <constraint firstItem="tkW-wL-HjJ" firstAttribute="leading" secondItem="Ao2-b8-xoM" secondAttribute="leading" constant="20" id="Blc-Sq-Z5E"/>
+                            <constraint firstItem="JfK-IZ-3ZY" firstAttribute="centerX" secondItem="3SY-Kv-YMA" secondAttribute="centerX" id="Egg-Tm-FhK"/>
+                            <constraint firstItem="Ao2-b8-xoM" firstAttribute="trailing" secondItem="6bf-Vr-02i" secondAttribute="trailing" constant="20" id="Gw2-bn-kOH"/>
+                            <constraint firstItem="JfK-IZ-3ZY" firstAttribute="leading" secondItem="Ao2-b8-xoM" secondAttribute="leading" constant="20" id="II6-7f-5aE"/>
+                            <constraint firstItem="6bf-Vr-02i" firstAttribute="leading" secondItem="Ao2-b8-xoM" secondAttribute="leading" constant="20" id="NVj-rC-c7e"/>
+                            <constraint firstItem="Ao2-b8-xoM" firstAttribute="trailing" secondItem="tre-1L-Gxa" secondAttribute="trailing" constant="20" id="Njl-qg-SzP"/>
+                            <constraint firstItem="JfK-IZ-3ZY" firstAttribute="top" secondItem="6bf-Vr-02i" secondAttribute="bottom" constant="10" id="QiE-EB-vNa"/>
+                            <constraint firstItem="cEl-wT-IjL" firstAttribute="centerX" secondItem="3SY-Kv-YMA" secondAttribute="centerX" id="X8D-5K-D15"/>
+                            <constraint firstItem="tre-1L-Gxa" firstAttribute="top" secondItem="tkW-wL-HjJ" secondAttribute="bottom" constant="10" id="YwD-Oc-Jba"/>
+                            <constraint firstItem="6bf-Vr-02i" firstAttribute="top" secondItem="Jx5-9A-UNQ" secondAttribute="bottom" constant="50" id="gii-qc-zpt"/>
+                            <constraint firstItem="cEl-wT-IjL" firstAttribute="top" secondItem="JfK-IZ-3ZY" secondAttribute="bottom" constant="50" id="hSs-eG-7YI"/>
+                            <constraint firstItem="tre-1L-Gxa" firstAttribute="leading" secondItem="Ao2-b8-xoM" secondAttribute="leading" constant="20" id="hkh-pP-VOY"/>
+                            <constraint firstItem="cEl-wT-IjL" firstAttribute="centerX" secondItem="3SY-Kv-YMA" secondAttribute="centerX" id="iML-Sy-nyV"/>
+                            <constraint firstItem="Ao2-b8-xoM" firstAttribute="trailing" secondItem="tkW-wL-HjJ" secondAttribute="trailing" constant="20" id="lab-AX-Etx"/>
+                            <constraint firstItem="Ao2-b8-xoM" firstAttribute="bottom" secondItem="OLM-te-hMW" secondAttribute="bottom" constant="33" id="m42-d4-KHI"/>
+                            <constraint firstItem="OLM-te-hMW" firstAttribute="centerX" secondItem="3SY-Kv-YMA" secondAttribute="centerX" id="mHu-lz-Al7"/>
+                            <constraint firstItem="Jx5-9A-UNQ" firstAttribute="top" secondItem="tre-1L-Gxa" secondAttribute="bottom" constant="41.5" id="vEF-Lx-S2Q"/>
+                            <constraint firstItem="tkW-wL-HjJ" firstAttribute="top" secondItem="Ao2-b8-xoM" secondAttribute="top" constant="10" id="zW4-Oa-OWo"/>
+                            <constraint firstItem="Jx5-9A-UNQ" firstAttribute="centerX" secondItem="3SY-Kv-YMA" secondAttribute="centerX" id="zci-d8-9vm"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Key pair" id="r7Z-pq-bAd"/>
+                    <connections>
+                        <outlet property="pubKeyTxt" destination="JfK-IZ-3ZY" id="uIR-9F-4Rl"/>
+                        <outlet property="pvtKeyTxt" destination="tre-1L-Gxa" id="fga-Lf-dQe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ytN-zl-aMX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="543" y="98"/>
+            <point key="canvasLocation" x="540.57971014492762" y="97.767857142857139"/>
         </scene>
         <!--Secure Cell: Seal Mode-->
         <scene sceneID="iLT-pq-A7v">
             <objects>
-                <viewController title="Secure Cell: Seal Mode" id="7Ih-No-B42" sceneMemberID="viewController">
+                <viewController title="Secure Cell: Seal Mode" id="7Ih-No-B42" customClass="SecureCellSealModeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d0A-wB-IAt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input here: &quot;Hello, Themis!&quot;" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="UEX-6w-4cE">
+                                <rect key="frame" x="20" y="129" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text to encrypt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yu-F5-LtQ">
+                                <rect key="frame" x="20" y="98" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Context" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnb-ap-SDE">
+                                <rect key="frame" x="20" y="183" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Context may be empty" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jcX-Ye-Khi">
+                                <rect key="frame" x="20" y="214" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use the password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gd4-YC-KPd">
+                                <rect key="frame" x="20" y="268" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input some password here " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4XG-je-mmu">
+                                <rect key="frame" x="20" y="299" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use the random generated symmetric key" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L7u-WZ-27i">
+                                <rect key="frame" x="20" y="353" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tW7-6C-bdm">
+                                <rect key="frame" x="20" y="384" width="374" height="64"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="W2X-Fp-HkP"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Encrypted result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YW2-w1-OZG">
+                                <rect key="frame" x="20" y="468" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KzW-BC-6NP">
+                                <rect key="frame" x="20" y="499" width="374" height="64"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="uRd-nQ-hjQ"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJj-oO-wie">
+                                <rect key="frame" x="20" y="573" width="120" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="B9D-l9-tH2"/>
+                                    <constraint firstAttribute="height" constant="50" id="DT4-sT-9pz"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Encrypt with the password">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ecryptWithPasswordTouchUp:" destination="7Ih-No-B42" eventType="touchUpInside" id="O8m-W2-Hzf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9U-Wf-QgU">
+                                <rect key="frame" x="254" y="573" width="140" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="h8K-wZ-hM5"/>
+                                    <constraint firstAttribute="width" constant="140" id="oox-Yl-vZv"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Encrypt with the symmetric key">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="encryptWithSymKeyTouchUp:" destination="7Ih-No-B42" eventType="touchUpInside" id="0FT-iQ-UIM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Decrypted result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ny1-rx-xgQ">
+                                <rect key="frame" x="20" y="643" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bd9-5E-eww">
+                                <rect key="frame" x="20" y="674" width="374" height="64"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="Khh-xT-iMx"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Hi-aH-VCu">
+                                <rect key="frame" x="20" y="748" width="120" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="jh9-IB-E1U"/>
+                                    <constraint firstAttribute="width" constant="120" id="om3-9Q-jr2"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Decrypt with the password">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="decryptWithPasswordTouchUp:" destination="7Ih-No-B42" eventType="touchUpInside" id="PRw-ra-nkg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sFg-De-wSG">
+                                <rect key="frame" x="254" y="748" width="140" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="g8S-Ox-Jh6"/>
+                                    <constraint firstAttribute="height" constant="50" id="mcq-ji-3ck"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Decrypt with the symmetric key">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="decryptWithSymKeyTouchUp:" destination="7Ih-No-B42" eventType="touchUpInside" id="Ish-R0-rfn"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="3mU-2X-bXX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3Hi-aH-VCu" firstAttribute="top" secondItem="bd9-5E-eww" secondAttribute="bottom" constant="10" id="0bF-R3-KRr"/>
+                            <constraint firstItem="3mU-2X-bXX" firstAttribute="trailing" secondItem="UEX-6w-4cE" secondAttribute="trailing" constant="20" id="0vq-QE-m7l"/>
+                            <constraint firstItem="tW7-6C-bdm" firstAttribute="leading" secondItem="3mU-2X-bXX" secondAttribute="leading" constant="20" id="3tZ-4v-fO3"/>
+                            <constraint firstItem="3mU-2X-bXX" firstAttribute="trailing" secondItem="jcX-Ye-Khi" secondAttribute="trailing" constant="20" id="5lX-aN-Fe3"/>
+                            <constraint firstItem="KzW-BC-6NP" firstAttribute="leading" secondItem="3mU-2X-bXX" secondAttribute="leading" constant="20" id="8Wg-bf-ASw"/>
+                            <constraint firstItem="Gd4-YC-KPd" firstAttribute="leading" secondItem="3mU-2X-bXX" secondAttribute="leading" constant="20" id="8XE-hH-AHs"/>
+                            <constraint firstAttribute="trailing" secondItem="s9U-Wf-QgU" secondAttribute="trailing" constant="20" id="G0U-td-8e7"/>
+                            <constraint firstItem="3mU-2X-bXX" firstAttribute="trailing" secondItem="bd9-5E-eww" secondAttribute="trailing" constant="20" id="HIR-qy-2QM"/>
+                            <constraint firstItem="4XG-je-mmu" firstAttribute="leading" secondItem="3mU-2X-bXX" secondAttribute="leading" constant="20" id="HTs-tl-obQ"/>
+                            <constraint firstItem="tW7-6C-bdm" firstAttribute="top" secondItem="L7u-WZ-27i" secondAttribute="bottom" constant="10" id="JTV-nb-3ZO"/>
+                            <constraint firstItem="3mU-2X-bXX" firstAttribute="trailing" secondItem="KzW-BC-6NP" secondAttribute="trailing" constant="20" id="KRo-ud-WPR"/>
+                            <constraint firstItem="3mU-2X-bXX" firstAttribute="trailing" secondItem="L7u-WZ-27i" secondAttribute="trailing" constant="20" id="N23-Bh-1It"/>
+                            <constraint firstItem="UEX-6w-4cE" firstAttribute="leading" secondItem="3mU-2X-bXX" secondAttribute="leading" constant="20" id="NHQ-lk-xcW"/>
+                            <constraint firstItem="ZJj-oO-wie" firstAttribute="leading" secondItem="3mU-2X-bXX" secondAttribute="leading" constant="20" id="Nb8-wp-UH1"/>
+                            <constraint firstItem="jcX-Ye-Khi" firstAttribute="top" secondItem="cnb-ap-SDE" secondAttribute="bottom" constant="10" id="PHq-NM-Hig"/>
+                            <constraint firstItem="cnb-ap-SDE" firstAttribute="leading" secondItem="3mU-2X-bXX" secondAttribute="leading" constant="20" id="Pyv-JD-Dw0"/>
+                            <constraint firstItem="YW2-w1-OZG" firstAttribute="leading" secondItem="3mU-2X-bXX" secondAttribute="leading" constant="20" id="QdD-Jh-x1v"/>
+                            <constraint firstItem="jcX-Ye-Khi" firstAttribute="leading" secondItem="3mU-2X-bXX" secondAttribute="leading" constant="20" id="Tiw-1d-bum"/>
+                            <constraint firstItem="Gd4-YC-KPd" firstAttribute="top" secondItem="jcX-Ye-Khi" secondAttribute="bottom" constant="20" id="TnN-D7-NlM"/>
+                            <constraint firstItem="YW2-w1-OZG" firstAttribute="top" secondItem="tW7-6C-bdm" secondAttribute="bottom" constant="20" id="XB7-gk-6Pq"/>
+                            <constraint firstItem="3mU-2X-bXX" firstAttribute="trailing" secondItem="Gd4-YC-KPd" secondAttribute="trailing" constant="20" id="XFa-y3-veH"/>
+                            <constraint firstItem="bd9-5E-eww" firstAttribute="top" secondItem="Ny1-rx-xgQ" secondAttribute="bottom" constant="10" id="ZKb-eQ-ScS"/>
+                            <constraint firstItem="3mU-2X-bXX" firstAttribute="trailing" secondItem="tW7-6C-bdm" secondAttribute="trailing" constant="20" id="bDB-0z-YtV"/>
+                            <constraint firstItem="8yu-F5-LtQ" firstAttribute="leading" secondItem="3mU-2X-bXX" secondAttribute="leading" constant="20" id="cAc-tt-DDp"/>
+                            <constraint firstItem="ZJj-oO-wie" firstAttribute="top" secondItem="KzW-BC-6NP" secondAttribute="bottom" constant="10" id="cfX-Fq-hdZ"/>
+                            <constraint firstItem="sFg-De-wSG" firstAttribute="top" secondItem="bd9-5E-eww" secondAttribute="bottom" constant="10" id="dTV-77-Bz7"/>
+                            <constraint firstItem="8yu-F5-LtQ" firstAttribute="top" secondItem="3mU-2X-bXX" secondAttribute="top" constant="10" id="dj2-wu-Dlj"/>
+                            <constraint firstItem="L7u-WZ-27i" firstAttribute="leading" secondItem="3mU-2X-bXX" secondAttribute="leading" constant="20" id="dpj-9T-XFt"/>
+                            <constraint firstItem="Ny1-rx-xgQ" firstAttribute="top" secondItem="ZJj-oO-wie" secondAttribute="bottom" constant="20" id="gB5-6p-NYB"/>
+                            <constraint firstItem="bd9-5E-eww" firstAttribute="leading" secondItem="3mU-2X-bXX" secondAttribute="leading" constant="20" id="gU6-pN-uw1"/>
+                            <constraint firstItem="3mU-2X-bXX" firstAttribute="trailing" secondItem="4XG-je-mmu" secondAttribute="trailing" constant="20" id="hwl-Xf-VUR"/>
+                            <constraint firstItem="3mU-2X-bXX" firstAttribute="trailing" secondItem="cnb-ap-SDE" secondAttribute="trailing" constant="20" id="iNW-hA-MUX"/>
+                            <constraint firstItem="3Hi-aH-VCu" firstAttribute="leading" secondItem="3mU-2X-bXX" secondAttribute="leading" constant="20" id="mFT-ta-zJN"/>
+                            <constraint firstItem="3mU-2X-bXX" firstAttribute="trailing" secondItem="YW2-w1-OZG" secondAttribute="trailing" constant="20" id="oNt-lk-3fp"/>
+                            <constraint firstItem="s9U-Wf-QgU" firstAttribute="top" secondItem="KzW-BC-6NP" secondAttribute="bottom" constant="20" id="pHZ-b8-A44"/>
+                            <constraint firstItem="4XG-je-mmu" firstAttribute="top" secondItem="Gd4-YC-KPd" secondAttribute="bottom" constant="10" id="qev-LK-MkY"/>
+                            <constraint firstItem="cnb-ap-SDE" firstAttribute="top" secondItem="UEX-6w-4cE" secondAttribute="bottom" constant="20" id="qsu-oP-Bls"/>
+                            <constraint firstItem="3mU-2X-bXX" firstAttribute="trailing" secondItem="8yu-F5-LtQ" secondAttribute="trailing" constant="20" id="ssI-4K-Jhj"/>
+                            <constraint firstItem="UEX-6w-4cE" firstAttribute="top" secondItem="8yu-F5-LtQ" secondAttribute="bottom" constant="10" id="v59-IW-0el"/>
+                            <constraint firstItem="s9U-Wf-QgU" firstAttribute="top" secondItem="KzW-BC-6NP" secondAttribute="bottom" constant="10" id="wxk-Gx-T1P"/>
+                            <constraint firstItem="KzW-BC-6NP" firstAttribute="top" secondItem="YW2-w1-OZG" secondAttribute="bottom" constant="10" id="wyf-zH-u6j"/>
+                            <constraint firstItem="L7u-WZ-27i" firstAttribute="top" secondItem="4XG-je-mmu" secondAttribute="bottom" constant="20" id="xh5-RC-RAc"/>
+                            <constraint firstItem="Ny1-rx-xgQ" firstAttribute="leading" secondItem="3mU-2X-bXX" secondAttribute="leading" constant="20" id="y1R-nV-Rnq"/>
+                            <constraint firstItem="3mU-2X-bXX" firstAttribute="trailing" secondItem="sFg-De-wSG" secondAttribute="trailing" constant="20" id="ysU-ta-6w1"/>
+                            <constraint firstItem="3mU-2X-bXX" firstAttribute="trailing" secondItem="Ny1-rx-xgQ" secondAttribute="trailing" constant="20" id="zgr-C5-eH2"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="pHZ-b8-A44"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Secure Cell: Seal mode" id="K5t-68-dsZ"/>
+                    <connections>
+                        <outlet property="context" destination="jcX-Ye-Khi" id="0UQ-DO-fEf"/>
+                        <outlet property="decryptWithPasswordBtn" destination="3Hi-aH-VCu" id="Jgu-OH-2yn"/>
+                        <outlet property="decryptWithSymKeyBtn" destination="sFg-De-wSG" id="cyS-RT-aF0"/>
+                        <outlet property="decryptedTextView" destination="bd9-5E-eww" id="QaM-dJ-JY8"/>
+                        <outlet property="encryptWithPasswordBtn" destination="ZJj-oO-wie" id="CAO-TB-XBE"/>
+                        <outlet property="encryptWithSymKeyBtn" destination="s9U-Wf-QgU" id="GG5-zZ-0SI"/>
+                        <outlet property="encryptedTextView" destination="KzW-BC-6NP" id="42h-Gb-j6T"/>
+                        <outlet property="password" destination="4XG-je-mmu" id="I10-pi-2VZ"/>
+                        <outlet property="plaintext" destination="UEX-6w-4cE" id="Apw-sI-yD1"/>
+                        <outlet property="symKeyTextView" destination="tW7-6C-bdm" id="NEA-2D-hNx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IYW-rM-sYH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

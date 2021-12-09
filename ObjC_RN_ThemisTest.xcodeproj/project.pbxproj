@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D371318275B9C930090279A /* SymmetricKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D371317275B9C930090279A /* SymmetricKey.m */; };
 		1D90DD3527579E5000C743CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D90DD3427579E5000C743CD /* AppDelegate.m */; };
 		1D90DD3827579E5000C743CD /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D90DD3727579E5000C743CD /* SceneDelegate.m */; };
 		1D90DD3B27579E5000C743CD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D90DD3A27579E5000C743CD /* ViewController.m */; };
@@ -18,6 +17,9 @@
 		1D90DD5027579E5700C743CD /* ObjC_RN_ThemisTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D90DD4F27579E5700C743CD /* ObjC_RN_ThemisTestTests.m */; };
 		1D90DD5A27579E5700C743CD /* ObjC_RN_ThemisTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D90DD5927579E5700C743CD /* ObjC_RN_ThemisTestUITests.m */; };
 		1D90DD5C27579E5700C743CD /* ObjC_RN_ThemisTestUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D90DD5B27579E5700C743CD /* ObjC_RN_ThemisTestUITestsLaunchTests.m */; };
+		1DE8F934275E9DB200ECD30F /* SymmetricKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE8F931275E9DB100ECD30F /* SymmetricKey.m */; };
+		1DE8F936275E9E8700ECD30F /* KeyPair.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE8F935275E9E8700ECD30F /* KeyPair.m */; };
+		1DE8F939275F754A00ECD30F /* SecureCellSealMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE8F938275F754A00ECD30F /* SecureCellSealMode.m */; };
 		22C01EEEC5378D6B737C0984 /* Pods_ObjC_RN_ThemisTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E1AD5D5D1343B82F76149C3 /* Pods_ObjC_RN_ThemisTest.framework */; };
 		260836E0B063FB0F005F1E0E /* Pods_ObjC_RN_ThemisTest_ObjC_RN_ThemisTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407D80222C5E274B4F21C4B1 /* Pods_ObjC_RN_ThemisTest_ObjC_RN_ThemisTestUITests.framework */; };
 		41CE3030B033C561136B5D39 /* Pods_ObjC_RN_ThemisTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99D29D47B24F4D5D330800D1 /* Pods_ObjC_RN_ThemisTestTests.framework */; };
@@ -42,8 +44,6 @@
 
 /* Begin PBXFileReference section */
 		071C8DE80F8BC0981C8A9D13 /* Pods-ObjC_RN_ThemisTest-ObjC_RN_ThemisTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjC_RN_ThemisTest-ObjC_RN_ThemisTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-ObjC_RN_ThemisTest-ObjC_RN_ThemisTestUITests/Pods-ObjC_RN_ThemisTest-ObjC_RN_ThemisTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		1D371317275B9C930090279A /* SymmetricKey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SymmetricKey.m; sourceTree = "<group>"; };
-		1D371319275E81C90090279A /* SymmetricKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SymmetricKey.h; sourceTree = "<group>"; };
 		1D90DD3027579E5000C743CD /* ObjC_RN_ThemisTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjC_RN_ThemisTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D90DD3327579E5000C743CD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D90DD3427579E5000C743CD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -61,6 +61,12 @@
 		1D90DD5527579E5700C743CD /* ObjC_RN_ThemisTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjC_RN_ThemisTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D90DD5927579E5700C743CD /* ObjC_RN_ThemisTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjC_RN_ThemisTestUITests.m; sourceTree = "<group>"; };
 		1D90DD5B27579E5700C743CD /* ObjC_RN_ThemisTestUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjC_RN_ThemisTestUITestsLaunchTests.m; sourceTree = "<group>"; };
+		1DE8F930275E9DB100ECD30F /* SymmetricKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymmetricKey.h; sourceTree = "<group>"; };
+		1DE8F931275E9DB100ECD30F /* SymmetricKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymmetricKey.m; sourceTree = "<group>"; };
+		1DE8F932275E9DB100ECD30F /* KeyPair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyPair.h; sourceTree = "<group>"; };
+		1DE8F935275E9E8700ECD30F /* KeyPair.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyPair.m; sourceTree = "<group>"; };
+		1DE8F937275F74F400ECD30F /* SecureCellSealMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecureCellSealMode.h; sourceTree = "<group>"; };
+		1DE8F938275F754A00ECD30F /* SecureCellSealMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecureCellSealMode.m; sourceTree = "<group>"; };
 		407D80222C5E274B4F21C4B1 /* Pods_ObjC_RN_ThemisTest_ObjC_RN_ThemisTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjC_RN_ThemisTest_ObjC_RN_ThemisTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B8490826090DA8F8B264440 /* Pods-ObjC_RN_ThemisTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjC_RN_ThemisTestTests.release.xcconfig"; path = "Target Support Files/Pods-ObjC_RN_ThemisTestTests/Pods-ObjC_RN_ThemisTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		4E1AD5D5D1343B82F76149C3 /* Pods_ObjC_RN_ThemisTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjC_RN_ThemisTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,8 +108,12 @@
 		1D371316275B9C5E0090279A /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1D371317275B9C930090279A /* SymmetricKey.m */,
-				1D371319275E81C90090279A /* SymmetricKey.h */,
+				1DE8F932275E9DB100ECD30F /* KeyPair.h */,
+				1DE8F935275E9E8700ECD30F /* KeyPair.m */,
+				1DE8F930275E9DB100ECD30F /* SymmetricKey.h */,
+				1DE8F931275E9DB100ECD30F /* SymmetricKey.m */,
+				1DE8F937275F74F400ECD30F /* SecureCellSealMode.h */,
+				1DE8F938275F754A00ECD30F /* SecureCellSealMode.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -176,7 +186,6 @@
 				5F7D00DB0C27DD75B4C6E73B /* Pods-ObjC_RN_ThemisTestTests.debug.xcconfig */,
 				4B8490826090DA8F8B264440 /* Pods-ObjC_RN_ThemisTestTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -430,9 +439,11 @@
 			files = (
 				1D90DD3B27579E5000C743CD /* ViewController.m in Sources */,
 				1D90DD3527579E5000C743CD /* AppDelegate.m in Sources */,
+				1DE8F939275F754A00ECD30F /* SecureCellSealMode.m in Sources */,
 				1D90DD4627579E5600C743CD /* main.m in Sources */,
 				1D90DD3827579E5000C743CD /* SceneDelegate.m in Sources */,
-				1D371318275B9C930090279A /* SymmetricKey.m in Sources */,
+				1DE8F934275E9DB200ECD30F /* SymmetricKey.m in Sources */,
+				1DE8F936275E9E8700ECD30F /* KeyPair.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
